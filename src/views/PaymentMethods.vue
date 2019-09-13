@@ -93,7 +93,7 @@
                         if (prefix.active_currency.code == 'XLM' || prefix.active_currency.code == '') {
                             prefix.active_currency.code = "native"
                         }
-                        this.axios.get(prefix.api_server + '/api/shopify_gateway_demo/', {
+                        this.axios.get(prefix.api_server + '/api/shopify_gateway/', {
                             params: {
                                 key: this.$parent.$parent.merchant.id,
                                 description: this.Shopify.line_items[0].title,
